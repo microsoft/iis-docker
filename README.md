@@ -5,7 +5,7 @@ NOTE: This is a Windows container image. [Learn more about Windows containers](h
 
 ## Supported tags and respective `Dockerfile` links
 
-* servercore, latest [servercore/Dockerfile](https://github.com/microsoft/iis-docker/blob/master/servercore/Dockerfile)
+* servercore, latest ([servercore/Dockerfile](https://github.com/microsoft/iis-docker/blob/master/windowsservercore/Dockerfile))
 
 This image is built from the [microsoft/iis-docker GitHub repo](https://github.com/microsoft/iis-docker).
 
@@ -37,7 +37,7 @@ There is no need to specify an `ENTRYPOINT` in your Dockerfile since the `micros
 
 
 In addition to static content, IIS can run other workloads including, but limited to ASP.NET, ASP.NET Core, PHP, and Apache Tomcat.
-Check out [ASP.NET on DockerHub](https://hub.docker.com/microsoft/aspnet/) to learn how to run ASP.NET workloads on top of IIS.
+Check out [ASP.NET on DockerHub](https://hub.docker.com/r/microsoft/aspnet/) to learn how to run ASP.NET workloads on top of IIS.
 
 ## Supported Docker Versions
 This image has been tested on Docker Versions 1.12.1-beta26 or higher.
