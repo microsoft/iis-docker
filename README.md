@@ -30,14 +30,31 @@ ADD content/ /site
 You can then build and run the Docker image:
 ```
 $ docker build -t iis-site .
-$ docker run -d -p 8000:8000 --rm --name my-running-site iis-site
+$ docker run -d -p 8000:8000 --name my-running-site iis-site
 ```
 
 There is no need to specify an `ENTRYPOINT` in your Dockerfile since the `microsoft/iis` base image already includes an entrypoint application that monitors the status of the IIS World Wide Web Publishing Service (W3SVC).
 
+### Verify in the browser
 
-In addition to static content, IIS can run other workloads including, but limited to ASP.NET, ASP.NET Core, PHP, and Apache Tomcat.
-Check out [ASP.NET on DockerHub](https://hub.docker.com/r/microsoft/aspnet/) to learn how to run ASP.NET workloads on top of IIS.
+> With the current release, you can't use `http://localhost` to browse your site from the container host. This is because of a known behavior in WinNAT, and will be resolved in future. Until that is addressed, you need to use the IP address of the container.
+
+Once the container starts, you'll need to finds its IP address so that you can connect to your running container from a browser. You use the `docker inspect` command to do that:
+
+`docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" my-running-site`
+
+You will see an output similar to this:
+
+```
+172.28.103.186
+```
+
+You can connect the running container using the IP address and configured port, `http://172.28.103.186:8000` in the example shown.
+
+In addition to static content, IIS can run other workloads including, but limited to ASP.NET, ASP.NET Core, NodeJS, PHP, and Apache Tomcat.
+
+For a comprehensive tutorial on running an ASP.NET app in a container, check out [the tutorial on the docs site](https://docs.microsoft.com/en-us/dotnet/articles/framework/docker/aspnetmvc).
+
 
 ## Supported Docker Versions
 This image has been tested on Docker Versions 1.12.1-beta26 or higher.
