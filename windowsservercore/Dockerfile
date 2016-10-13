@@ -1,4 +1,4 @@
-FROM microsoft/windowsservercore
+FROM microsoft/windowsservercore:10.0.14393.321
 
 RUN powershell -Command Add-WindowsFeature Web-Server
 
