@@ -9,4 +9,6 @@ RUN dism.exe /online /add-package /packagepath:c:\install\Microsoft-NanoServer-I
     dism.exe /online /add-package /packagepath:c:\install\Microsoft-NanoServer-IIS-Package_base_10-0-14393-0.cab & \
     rd /s /q c:\install
 
+EXPOSE 80
+
 ENTRYPOINT ["C:\\ServiceMonitor.exe", "w3svc"]
