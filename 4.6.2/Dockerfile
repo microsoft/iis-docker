@@ -1,4 +1,4 @@
-FROM microsoft/dotnet-framework:4.7
+FROM microsoft/dotnet-framework:4.6.2
 
 RUN powershell -Command Add-WindowsFeature Web-Server
 
