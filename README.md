@@ -1,13 +1,14 @@
 ![IIS Docker Image](https://avatars2.githubusercontent.com/u/6154722?v=3&s=200)
 # IIS Docker Image
 
-NOTE: This is a Windows container image. [Learn more about Windows containers](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/about_overview).
+# Supported Windows Server 2016 Version 1709 (Fall Creators Update) amd64 tags
 
-## Supported tags and respective `Dockerfile` links
+- [`windowsservercore-1709` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore/Dockerfile)
 
-* servercore, latest ([servercore/Dockerfile](https://github.com/microsoft/iis-docker/blob/master/windowsservercore/Dockerfile))
+# Supported Windows Server 2016 amd64 tags
 
-This image is built from the [microsoft/iis-docker GitHub repo](https://github.com/microsoft/iis-docker).
+- [`windowsservercore, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore/Dockerfile)
+- [`nanoserver` (*nanoserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/nanoserver/Dockerfile)
 
 ## What is IIS?
 Internet Information Services (IIS) for Windows® Server is a flexible, secure and manageable Web server for hosting anything on the Web.
