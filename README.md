@@ -3,12 +3,12 @@
 
 # Supported Windows Server 2016 Version 1709 (Fall Creators Update) amd64 tags
 
-- [`windowsservercore-1709` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore/Dockerfile)
+- [`windowsservercore-1709` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-1709/Dockerfile)
 
 # Supported Windows Server 2016 amd64 tags
 
-- [`windowsservercore, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore/Dockerfile)
-- [`nanoserver` (*nanoserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/nanoserver/Dockerfile)
+- [`windowsservercore-ltsc2016, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-ltsc2016/Dockerfile)
+- [`nanoserver-sac2016` (*nanoserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/nanoserver-sac2016/Dockerfile)
 
 ## What is IIS?
 Internet Information Services (IIS) for Windows® Server is a flexible, secure and manageable Web server for hosting anything on the Web.
