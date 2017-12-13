@@ -7,7 +7,7 @@
 
 # Supported Windows Server 2016 amd64 tags
 
-- [`windowsservercore-ltsc2016, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/tree/master/windowsservercore-ltsc2016)
+- [`windowsservercore-ltsc2016, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-ltsc2016/Dockerfile)
 - [`nanoserver-sac2016` (*nanoserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/nanoserver-sac2016/Dockerfile)
 
 ## What is IIS?
