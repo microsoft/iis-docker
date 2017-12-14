@@ -1,4 +1,4 @@
-FROM microsoft/windowsservercore:1709_KB4054517
+FROM microsoft/windowsservercore:1709
 
 RUN powershell -Command Add-WindowsFeature Web-Server
 
