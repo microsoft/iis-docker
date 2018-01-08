@@ -52,7 +52,7 @@ You will see an output similar to this:
 
 You can connect the running container using the IP address and configured port, `http://172.28.103.186:8000` in the example shown.
 
-In addition to static content, IIS can run other workloads including, but limited to ASP.NET, ASP.NET Core, NodeJS, PHP, and Apache Tomcat.
+In addition to static content, IIS can run other workloads including, but not limited to ASP.NET, ASP.NET Core, NodeJS, PHP, and Apache Tomcat.
 
 For a comprehensive tutorial on running an ASP.NET app in a container, check out [the tutorial on the docs site](https://docs.microsoft.com/en-us/dotnet/articles/framework/docker/aspnetmvc).
 
