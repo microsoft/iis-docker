@@ -8,9 +8,9 @@ RUN dism.exe /online /add-package /packagepath:c:\install\Microsoft-NanoServer-I
     dism.exe /online /add-package /packagepath:c:\install\Microsoft-NanoServer-IIS-Package_English_10-0-14393-0.cab & \
     dism.exe /online /add-package /packagepath:c:\install\Microsoft-NanoServer-IIS-Package_base_10-0-14393-0.cab & \
     rd /s /q c:\install & \
-    powershell -NoProfile -Command \
-    start-service was; \
-    While ((Get-ItemProperty HKLM:\SYSTEM\CurrentControlSet\Services\WAS\Parameters\ -Name NanoSetup -ErrorAction Ignore) -ne $null) {sleep 1}
+    Powershell -NoProfile -Command \
+    Start-Service Was; \
+    While ((Get-ItemProperty HKLM:\SYSTEM\CurrentControlSet\Services\WAS\Parameters\ -Name NanoSetup -ErrorAction Ignore) -ne $null) {Sleep 1}
 
 EXPOSE 80
 
