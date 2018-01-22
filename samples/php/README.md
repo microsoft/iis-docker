@@ -15,7 +15,7 @@ To add a PHP application into the container, first put the application content i
 
 WORKDIR /inetpub/wwwroot
 
-COPY . .
+COPY ./content .
 ``` 
 
 You can then build the image:
