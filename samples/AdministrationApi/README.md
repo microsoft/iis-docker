@@ -24,7 +24,7 @@ Before building this dockerfile, the _api-keys.json_ file should be updated with
 First generate an access token. The token values in this example have been removed.
 
 ```
-PS C:\temp> .\Generate-ApiKey.ps1
+c:\>powershell -NoProfile -ExecutionPolicy unrestricted -Command "&{iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/Microsoft/IIS.Administration/dev/scripts/utils/Generate-ApiKey.ps1'))}"
 
 Name                           Value
 ----                           -----
