@@ -1,0 +1,15 @@
+{
+    "keys": [
+        /*
+        {
+            "id": "",
+            "purpose": "Container Administration",
+            "created_on": "",
+            "last_modified": "",
+            "expires_on": "",
+            "token_hash": "<Hash of Access Token>",
+            "token_type": "SWT"
+        }
+        */
+    ]
+}
