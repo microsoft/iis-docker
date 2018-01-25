@@ -15,18 +15,14 @@ Internet Information Services (IIS) for Windows® Server is a flexible, secure a
 
 ## How to use this image?
 ### Create a Dockerfile with your website
-```
+```Dockerfile
 FROM microsoft/iis
 
-RUN mkdir C:\site
+RUN powershell -NoProfile -Command Remove-Item -Recurse C:\inetpub\wwwroot\*
 
-RUN powershell -NoProfile -Command \
-    Import-module IISAdministration; \
-    New-IISSite -Name "Site" -PhysicalPath C:\site -BindingInformation "*:8000:"
+WORKDIR /inetpub/wwwroot
 
-EXPOSE 8000
-
-ADD content/ /site
+COPY content/ .
 ```
 You can then build and run the Docker image:
 ```
