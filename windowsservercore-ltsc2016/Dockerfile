@@ -1,8 +1,8 @@
 FROM microsoft/windowsservercore:ltsc2016
 
-RUN powershell -Command Add-WindowsFeature Web-Server
-
-ADD ServiceMonitor.exe /ServiceMonitor.exe
+RUN powershell -NoProfile -Command \ 
+    Add-WindowsFeature Web-Server \
+    Invoke-WebRequest https://dotnetbinaries.blob.core.windows.net/servicemonitor/1342334/ServiceMonitor.exe -OutFile C:\ServiceMonitor.exe
 
 EXPOSE 80
 
