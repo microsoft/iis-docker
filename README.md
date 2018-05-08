@@ -1,7 +1,7 @@
 ![IIS Docker Image](https://avatars2.githubusercontent.com/u/6154722?v=3&s=200)
 # IIS Docker Image
 
-# Supported Windows Server 2016 Version 1709 (Fall Creators Update) amd64 tags
+# Supported Windows Server, version 1709 amd64 tags
 
 - [`windowsservercore-1709` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-1709/Dockerfile)
 
