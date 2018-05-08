@@ -1,6 +1,10 @@
 ![IIS Docker Image](https://avatars2.githubusercontent.com/u/6154722?v=3&s=200)
 # IIS Docker Image
 
+# Supported Windows Server, version 1803 amd64 tags
+
+- [`windowsservercore-1803` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-1803/Dockerfile)
+
 # Supported Windows Server, version 1709 amd64 tags
 
 - [`windowsservercore-1709` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-1709/Dockerfile)
@@ -54,7 +58,7 @@ For a comprehensive tutorial on running an ASP.NET app in a container, check out
 
 
 ## Supported Docker Versions
-This image has been tested on Docker Versions 1.12.1-beta26 or higher.
+This image has been tested on Docker Versions 17.10 or higher.
 
 ## License
 MICROSOFT SOFTWARE SUPPLEMENTAL LICENSE TERMS
