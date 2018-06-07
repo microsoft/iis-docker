@@ -3,11 +3,11 @@
 
 # Supported Windows Server, version 1803 amd64 tags
 
-- [`windowsservercore-1803` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-1803/Dockerfile)
+- [`windowsservercore-1803, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-1803/Dockerfile)
 
 # Supported Windows Server, version 1709 amd64 tags
 
-- [`windowsservercore-1709` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-1709/Dockerfile)
+- [`windowsservercore-1709, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-1709/Dockerfile)
 
 # Supported Windows Server 2016 amd64 tags
 
