@@ -38,7 +38,21 @@ There is no need to specify an `ENTRYPOINT` in your Dockerfile since the `micros
 
 ### Verify in the browser
 
+#### On newer hosts
+
 You can connect to the running container using `http://localhost:8000` in the example shown.
+
+#### On older hosts
+
+> If you are running an older host, you cannot use `http://localhost` to browse your site from the container host. This is because of a known behavior in WinNAT and you need to use the IP address of the container.
+
+ Once the container starts, you'll need to finds its IP address so that you can connect to your running container from a browser. You use the `docker inspect` command to do that:	
+ `docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" my-running-site`	
+ You will see an output similar to this:	
+ ```	
+172.28.103.186	
+```	
+ You can connect the running container using the IP address and configured port, `http://172.28.103.186:8000` in the example shown.
 
 In addition to static content, IIS can run other workloads including, but not limited to ASP.NET, ASP.NET Core, NodeJS, PHP, and Apache Tomcat.
 
