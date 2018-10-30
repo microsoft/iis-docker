@@ -52,7 +52,7 @@ You can connect to the running container using `http://localhost:8000` in the ex
  ```	
 172.28.103.186	
 ```	
- You can connect the running container using the IP address and configured port, `http://172.28.103.186:8000` in the example shown.
+ You can connect the running container using the IP address and configured port, `http://172.28.103.186:80` in the example shown.
 
 In addition to static content, IIS can run other workloads including, but not limited to ASP.NET, ASP.NET Core, NodeJS, PHP, and Apache Tomcat.
 
