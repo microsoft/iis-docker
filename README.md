@@ -42,7 +42,7 @@ There is no need to specify an `ENTRYPOINT` in your Dockerfile since the `micros
 
 You can connect to the running container using `http://localhost:8000` in the example shown.
 
-#### On older hosts
+#### On older hosts (Windows Server, version 1709 and older)
 
 > If you are running an older host, you cannot use `http://localhost` to browse your site from the container host. This is because of a known behavior in WinNAT and you need to use the IP address of the container.
 
