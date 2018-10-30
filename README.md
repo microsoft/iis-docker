@@ -38,7 +38,7 @@ There is no need to specify an `ENTRYPOINT` in your Dockerfile since the `micros
 
 ### Verify in the browser
 
-#### On newer hosts
+#### On newer hosts (Windows Server, version 1803 and newer)
 
 You can connect to the running container using `http://localhost:8000` in the example shown.
 
