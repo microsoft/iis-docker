@@ -1,5 +1,8 @@
 ![IIS Docker Image](https://avatars2.githubusercontent.com/u/6154722?v=3&s=200)
 # IIS Docker Image
+# Supported Windows Server, version ltsc2019 amd64 tags
+
+- [`windowsservercore-ltsc2019, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-ltsc2019/Dockerfile)
 
 # Supported Windows Server, version 1803 amd64 tags
 
