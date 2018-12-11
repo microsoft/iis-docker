@@ -1,21 +1,31 @@
 ![IIS Docker Image](https://avatars2.githubusercontent.com/u/6154722?v=3&s=200)
 # IIS Docker Image
-# Supported Windows Server, version ltsc2019 amd64 tags
 
-- [`windowsservercore-ltsc2019, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-ltsc2019/Dockerfile)
+# Supported Windows Server 2019 amd64 tags
+
+ `docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2019`
+
+ [`windowsservercore-ltsc2019, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-ltsc2019/Dockerfile)
 
 # Supported Windows Server, version 1803 amd64 tags
 
-- [`windowsservercore-1803, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-1803/Dockerfile)
+ `docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-1803`
+
+ [`windowsservercore-1803, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-1803/Dockerfile)
 
 # Supported Windows Server, version 1709 amd64 tags
 
-- [`windowsservercore-1709, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-1709/Dockerfile)
+ `docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-1709`
+
+ [`windowsservercore-1709, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-1709/Dockerfile)
 
 # Supported Windows Server 2016 amd64 tags
 
-- [`windowsservercore-ltsc2016, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-ltsc2016/Dockerfile)
-- [`nanoserver-sac2016` (*nanoserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/nanoserver-sac2016/Dockerfile)
+ `docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2016`
+
+ [`windowsservercore-ltsc2016, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-ltsc2016/Dockerfile)
+
+ `docker pull mcr.microsoft.com/windows/servercore/iis:nanoserver-sac2016`
 
 ## What is IIS?
 Internet Information Services (IIS) for Windows® Server is a flexible, secure and manageable Web server for hosting anything on the Web.
@@ -41,21 +51,19 @@ There is no need to specify an `ENTRYPOINT` in your Dockerfile since the `micros
 
 ### Verify in the browser
 
-#### On newer hosts (Windows Server, version 1803 and newer)
+> With the current release, you can't use `http://localhost` to browse your site from the container host. This is because of a known behavior in WinNAT, and will be resolved in future. Until that is addressed, you need to use the IP address of the container.
 
-You can connect to the running container using `http://localhost:8000` in the example shown.
+Once the container starts, you'll need to finds its IP address so that you can connect to your running container from a browser. You use the `docker inspect` command to do that:
 
-#### On older hosts (Windows Server, version 1709 and older)
+`docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" my-running-site`
 
-> If you are running an older host, you cannot use `http://localhost` to browse your site from the container host. This is because of a known behavior in WinNAT and you need to use the IP address of the container.
+You will see an output similar to this:
 
- Once the container starts, you'll need to finds its IP address so that you can connect to your running container from a browser. You use the `docker inspect` command to do that:	
- `docker inspect -f "{{ .NetworkSettings.Networks.nat.IPAddress }}" my-running-site`	
- You will see an output similar to this:	
- ```	
-172.28.103.186	
-```	
- You can connect the running container using the IP address and configured port, `http://172.28.103.186:80` in the example shown.
+```
+172.28.103.186
+```
+
+You can connect the running container using the IP address and configured port, `http://172.28.103.186:8000` in the example shown.
 
 In addition to static content, IIS can run other workloads including, but not limited to ASP.NET, ASP.NET Core, NodeJS, PHP, and Apache Tomcat.
 
