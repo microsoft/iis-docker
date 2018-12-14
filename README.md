@@ -1,18 +1,31 @@
 ![IIS Docker Image](https://avatars2.githubusercontent.com/u/6154722?v=3&s=200)
 # IIS Docker Image
 
+# Supported Windows Server 2019 amd64 tags
+
+ `docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2019`
+
+ [`windowsservercore-ltsc2019, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-ltsc2019/Dockerfile)
+
 # Supported Windows Server, version 1803 amd64 tags
 
-- [`windowsservercore-1803, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-1803/Dockerfile)
+ `docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-1803`
+
+ [`windowsservercore-1803, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-1803/Dockerfile)
 
 # Supported Windows Server, version 1709 amd64 tags
 
-- [`windowsservercore-1709, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-1709/Dockerfile)
+ `docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-1709`
+
+ [`windowsservercore-1709, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-1709/Dockerfile)
 
 # Supported Windows Server 2016 amd64 tags
 
-- [`windowsservercore-ltsc2016, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-ltsc2016/Dockerfile)
-- [`nanoserver-sac2016` (*nanoserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/nanoserver-sac2016/Dockerfile)
+ `docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2016`
+
+ [`windowsservercore-ltsc2016, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-ltsc2016/Dockerfile)
+
+ `docker pull mcr.microsoft.com/windows/servercore/iis:nanoserver-sac2016`
 
 ## What is IIS?
 Internet Information Services (IIS) for Windows® Server is a flexible, secure and manageable Web server for hosting anything on the Web.
@@ -57,7 +70,6 @@ You can connect to the running container using `http://localhost:8000` in the ex
 In addition to static content, IIS can run other workloads including, but not limited to ASP.NET, ASP.NET Core, NodeJS, PHP, and Apache Tomcat.
 
 For a comprehensive tutorial on running an ASP.NET app in a container, check out [the tutorial on the docs site](https://docs.microsoft.com/en-us/dotnet/articles/framework/docker/aspnetmvc).
-
 
 ## Supported Docker Versions
 This image has been tested on Docker Versions 17.10 or higher.
