@@ -25,9 +25,6 @@
 
  [`windowsservercore-ltsc2016, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-ltsc2016/Dockerfile)
 
- `docker pull mcr.microsoft.com/windows/servercore/iis:nanoserver-sac2016`
-
-## What is IIS?
 Internet Information Services (IIS) for Windows® Server is a flexible, secure and manageable Web server for hosting anything on the Web.
 
 ## How to use this image?

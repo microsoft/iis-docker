@@ -1,5 +1,6 @@
 # escape=`
-FROM microsoft/windowsservercore-insider:latest
+FROM mcr.microsoft.com/windows/servercore:latest
+
 
 RUN powershell -Command `
     Add-WindowsFeature Web-Server; `
