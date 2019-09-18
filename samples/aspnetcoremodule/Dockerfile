@@ -1,6 +1,6 @@
 # escape=`
 
-FROM microsoft/iis
+FROM mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2019
 
 SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop';"]
 
