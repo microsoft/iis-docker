@@ -5,7 +5,7 @@
 # PHP 7.1 x64 running on IIS
 #
 
-FROM microsoft/iis AS php71
+FROM mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2019 AS php71
 
 SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop';"]
 
