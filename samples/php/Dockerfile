@@ -56,7 +56,7 @@ RUN dism.exe /Online /Enable-Feature /FeatureName:IIS-CGI /All && `
     del C:\inetpub\wwwroot\* /Q
 
 # Optional: Add a starter page
-# RUN powershell.exe -Command '<?php phpinfo(); ?>' | Out-File C:\inetpub\wwwroot\index.php -Encoding UTF8
+# RUN powershell.exe -Command "'<?php phpinfo(); ?>' | Out-File C:\inetpub\wwwroot\index.php -Encoding UTF8"
 
 #
 #ADD any application content and perform any configuration below
