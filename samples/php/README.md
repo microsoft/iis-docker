@@ -22,7 +22,7 @@ You can then build the image:
 
 ```
 docker build -t iis-php .
-docker run -d -p 80:00 --name my-php-site iis-php
+docker run -d -p 80:80 --name my-php-site iis-php
 ```
 
 ## Testing PHP
