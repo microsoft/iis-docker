@@ -1,0 +1,17 @@
+{
+  "LogConfig": {
+    "sources": [
+      {
+        "type": "ETW",
+        "eventFormatMultiLine": false,
+        "providers": [
+          {
+            "providerName": "Microsoft-Windows-IIS-Logging",
+            "providerGuid": "7E8AD27F-B271-4EA2-A783-A47BDE29143B",
+            "level": "Information"
+          }
+        ]
+      }
+    ]
+  }
+}
