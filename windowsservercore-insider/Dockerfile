@@ -12,5 +12,7 @@ RUN powershell -Command `
 
 RUN c:\windows\system32\inetsrv\appcmd.exe set config  -section:system.applicationHost/sites /"[name='Default Web Site'].logFile.logTargetW3C:"File,ETW""  /commit:apphost
 
+EXPOSE 80
+
 SHELL ["C:\\LogMonitor\\LogMonitor.exe", "powershell.exe"]
 ENTRYPOINT C:\ServiceMonitor.exe w3svc
