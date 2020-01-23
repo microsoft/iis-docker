@@ -25,5 +25,4 @@ RUN c:\windows\system32\inetsrv\appcmd.exe set config -section:system.applicatio
 
 EXPOSE 80
 
-SHELL ["C:\\LogMonitor\\LogMonitor.exe", "cmd.exe", "/S", "/C"]
-ENTRYPOINT C:\ServiceMonitor.exe w3svc
+ENTRYPOINT ["C:\\LogMonitor\\LogMonitor.exe", "C:\\ServiceMonitor.exe", "w3svc"]
