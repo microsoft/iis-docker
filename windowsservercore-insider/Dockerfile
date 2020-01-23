@@ -25,4 +25,6 @@ RUN c:\windows\system32\inetsrv\appcmd.exe set config -section:system.applicatio
 
 EXPOSE 80
 
+WORKDIR /LogMonitor
+
 ENTRYPOINT C:\LogMonitor\LogMonitor.exe C:\ServiceMonitor.exe w3svc
