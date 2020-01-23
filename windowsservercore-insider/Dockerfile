@@ -2,6 +2,7 @@
 
 FROM mcr.microsoft.com/windows/servercore/insider:10.0.19035.1
 
+# Install IIS, LogMonitor.exe and ServiceMonitor.exe
 RUN powershell -Command `
     Add-WindowsFeature Web-Server; `
     New-Item -ItemType Directory C:\LogMonitor; `
