@@ -9,7 +9,7 @@ RUN powershell -Command `
     $downloads = `
     @( `
         @{ `
-            uri = 'https://dotnetbinaries.blob.core.windows.net/servicemonitor/2.0.1.6/ServiceMonitor.exe'; `
+            uri = 'https://dotnetbinaries.blob.core.windows.net/servicemonitor/2.0.1.8/ServiceMonitor.exe'; `
             outFile = 'C:\ServiceMonitor.exe' `
         }, `
         @{ `
