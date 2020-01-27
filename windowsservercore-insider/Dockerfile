@@ -13,7 +13,7 @@ RUN powershell -Command `
             outFile = 'C:\ServiceMonitor.exe' `
         }, `
         @{ `
-            uri = 'https://github.com/microsoft/windows-container-tools/releases/download/v1.0/LogMonitor.exe'; `
+            uri = 'https://github.com/microsoft/windows-container-tools/releases/download/v1.1/LogMonitor.exe'; `
             outFile = 'C:\LogMonitor\LogMonitor.exe' `
         }, `
         @{ `
