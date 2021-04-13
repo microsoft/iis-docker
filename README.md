@@ -1,11 +1,11 @@
 ![IIS Docker Image](https://avatars2.githubusercontent.com/u/6154722?v=3&s=200)
 # IIS Docker Image
 
-# Supported Windows Server, version 2009 amd64 tags
+# Supported Windows Server, version 20H2 amd64 tags
 
- `docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-2009`
+ `docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-20H2`
 
- [`windowsservercore-2009, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-2009/Dockerfile)
+ [`windowsservercore-20H2, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-20H2/Dockerfile)
 
 # Supported Windows Server, version 2004 amd64 tags
 
