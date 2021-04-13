@@ -1,5 +1,5 @@
 # escape=`
-FROM mcr.microsoft.com/windows/servercore:1903
+FROM mcr.microsoft.com/windows/servercore:20H2
 
 RUN powershell -Command `
     Add-WindowsFeature Web-Server; `
