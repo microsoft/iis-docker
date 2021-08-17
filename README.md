@@ -1,6 +1,12 @@
 ![IIS Docker Image](https://avatars2.githubusercontent.com/u/6154722?v=3&s=200)
 # IIS Docker Image
 
+# Supported Windows Server 2022 amd64 tags
+
+ `docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2022`
+
+ [`windowsservercore-ltsc2022, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-ltsc2022/Dockerfile)
+
 # Supported Windows Server, version 20H2 amd64 tags
 
  `docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-20H2`
