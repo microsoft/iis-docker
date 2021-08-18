@@ -17,7 +17,7 @@ RUN powershell -Command `
             outFile = 'C:\LogMonitor\LogMonitor.exe' `
         }, `
         @{ `
-            uri = 'https://raw.githubusercontent.com/microsoft/iis-docker/master/windowsservercore-insider/LogMonitorConfig.json'; `
+            uri = 'https://raw.githubusercontent.com/microsoft/iis-docker/main/windowsservercore-insider/LogMonitorConfig.json'; `
             outFile = 'C:\LogMonitor\LogMonitorConfig.json' `
         } `
     ); `
