@@ -5,31 +5,31 @@
 
  `docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2022`
 
- [`windowsservercore-ltsc2022, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-ltsc2022/Dockerfile)
+ [`windowsservercore-ltsc2022, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/main/windowsservercore-ltsc2022/Dockerfile)
 
 # Supported Windows Server, version 20H2 amd64 tags
 
  `docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-20H2`
 
- [`windowsservercore-20H2, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-20H2/Dockerfile)
+ [`windowsservercore-20H2, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/main/windowsservercore-20H2/Dockerfile)
 
 # Supported Windows Server, version 2004 amd64 tags
 
  `docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-2004`
 
- [`windowsservercore-2004, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-2004/Dockerfile)
+ [`windowsservercore-2004, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/main/windowsservercore-2004/Dockerfile)
 
 # Supported Windows Server 2019 amd64 tags
 
  `docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2019`
 
- [`windowsservercore-ltsc2019, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-ltsc2019/Dockerfile)
+ [`windowsservercore-ltsc2019, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/main/windowsservercore-ltsc2019/Dockerfile)
 
 # Supported Windows Server 2016 amd64 tags
 
  `docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2016`
 
- [`windowsservercore-ltsc2016, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/master/windowsservercore-ltsc2016/Dockerfile)
+ [`windowsservercore-ltsc2016, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/main/windowsservercore-ltsc2016/Dockerfile)
 
 ## What is IIS?
 Internet Information Services (IIS) for Windows® Server is a flexible, secure and manageable Web server for hosting anything on the Web.
@@ -37,7 +37,7 @@ Internet Information Services (IIS) for Windows® Server is a flexible, secure a
 ## How to use this image?
 ### Create a Dockerfile with your website
 ```Dockerfile
-FROM microsoft/iis
+FROM mcr.microsoft.com/windows/servercore/iis
 
 RUN powershell -NoProfile -Command Remove-Item -Recurse C:\inetpub\wwwroot\*
 
