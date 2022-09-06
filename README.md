@@ -7,12 +7,6 @@
 
  [`windowsservercore-ltsc2022, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/main/windowsservercore-ltsc2022/Dockerfile)
 
-# Supported Windows Server, version 20H2 amd64 tags
-
- `docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-20H2`
-
- [`windowsservercore-20H2, latest` (*windowsserver/Dockerfile*)](https://github.com/Microsoft/iis-docker/blob/main/windowsservercore-20H2/Dockerfile)
-
 # Supported Windows Server 2019 amd64 tags
 
  `docker pull mcr.microsoft.com/windows/servercore/iis:windowsservercore-ltsc2019`
