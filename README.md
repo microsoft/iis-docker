@@ -45,9 +45,9 @@ $ docker build -t iis-site .
 $ docker run -d -p 8000:80 --name my-running-site iis-site
 ```
 
-"You do not need to specify an ENTRYPOINT in your Dockerfile because the microsoft/iis base image already includes an entrypoint application, ServiceMonitor.exe, which monitors the status of the IIS World Wide Web Publishing Service (W3SVC).
+You do not need to specify an ENTRYPOINT in your Dockerfile because the microsoft/iis base image already includes an entrypoint application, ServiceMonitor.exe, which monitors the status of the IIS World Wide Web Publishing Service (W3SVC).
 
-**Note:** The drop location for Service Monitor has changed. It is now available at the https://github.com/microsoft/IIS.ServiceMonitor/releases. The original location, https://dotnetbinaries.blob.core.windows.net/, will be removed on 6/1/2025. See https://github.com/dotnet/announcements/issues/351 for more information.
+**Note:** The drop location for Service Monitor has changed. It is now available at the https://github.com/microsoft/IIS.ServiceMonitor/releases. The original location, https://dotnetbinaries.blob.core.windows.net/, will be removed on 2025-06-10. See https://github.com/dotnet/announcements/issues/351 for more information.
 
 ### Verify in the browser
 
